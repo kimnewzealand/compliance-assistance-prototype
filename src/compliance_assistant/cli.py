@@ -6,8 +6,6 @@ Entry point for running the compliance assistant from command line.
 import sys
 import os
 import argparse
-from pathlib import Path
-from typing import Optional
 
 from .main import ComplianceAssistant
 from .logging_config import setup_logging, get_logger

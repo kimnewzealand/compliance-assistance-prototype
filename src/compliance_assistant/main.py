@@ -5,7 +5,7 @@ Combines PDF reading, obligation finding, and Excel export functionality.
 
 import os
 import sys
-from typing import List, Dict, Any
+from typing import Dict, Any
 
 from .pdf_reader import PDFReader
 from .obligation_finder import ObligationFinder
@@ -25,7 +25,7 @@ class ComplianceAssistant:
         self.obligation_finder = ObligationFinder()
         self.excel_exporter = ExcelExporter()
         logger.info("Compliance Assistant initialization complete")
-    
+
     def process_document(self, pdf_path: str, output_dir: str = 'output') -> Dict[str, Any]:
         """
         Process a PDF document and extract compliance obligations.
@@ -89,7 +89,7 @@ class ComplianceAssistant:
                 'success': False,
                 'error': error_msg
             }
-    
+
     def print_summary(self, result: Dict[str, Any]) -> None:
         """
         Print a formatted summary of the processing results.
@@ -111,7 +111,7 @@ class ComplianceAssistant:
         print("="*60)
         print(f"📄 Source Document: {summary['source_document']}")
         print(f"📊 Total Sentences: {summary['total_sentences']}")
-        print(f"⚖️  Total Obligations: {summary['total_obligations']}")
+        print(f"⚖️ Total Obligations: {summary['total_obligations']}")
         print(f"📁 Excel Output: {summary['excel_output_path']}")
 
         if summary['keyword_distribution']:

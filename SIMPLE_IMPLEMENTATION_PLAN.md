@@ -148,9 +148,3 @@ Based on the successful completion of the prototype, here are the key recommenda
 - **Regulatory Updates**: Mechanism to update obligation patterns when regulations change
 - **Cross-Reference Mapping**: Map obligations to specific regulatory requirements
 - **Compliance Reporting**: Generate compliance reports in standard formats
-
-### Technical Debt to Address
-- Replace PyPDF2 with pypdf to resolve deprecation warnings
-- Implement proper logging throughout the application
-- Add type hints to all functions for better code maintainability
-- Create comprehensive API documentation using tools like Sphinx

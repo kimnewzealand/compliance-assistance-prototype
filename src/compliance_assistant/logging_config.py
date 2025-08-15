@@ -5,7 +5,6 @@ Provides centralized logging setup with appropriate formatters and handlers.
 
 import logging
 import logging.handlers
-import os
 from pathlib import Path
 from typing import Optional
 

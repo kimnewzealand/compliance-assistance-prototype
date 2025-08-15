@@ -5,7 +5,7 @@ Exports compliance obligations to Excel format.
 
 import pandas as pd
 import os
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any
 from datetime import datetime
 from .logging_config import get_logger
 
