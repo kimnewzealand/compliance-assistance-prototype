@@ -16,7 +16,7 @@ Build a basic prototype that extracts compliance obligations from PDF documents 
 
 ## Technology Stack
 - **Python 3.9+** 
-- **PyPDF2** for PDF reading
+- **pypdf** for PDF reading
 - **pandas + openpyxl** for Excel export
 - **Basic regex patterns** for obligation detection (no complex LLM needed for prototype)
 
@@ -102,8 +102,6 @@ Create a simple unit test that will:
 Based on the successful completion of the prototype, here are the key recommendations for the next version:
 
 ### 1. **Enhanced PDF Processing**
-- **Upgrade to pypdf**: Replace PyPDF2 with the newer pypdf library to eliminate deprecation warnings and improve performance
-- **OCR Integration**: Add support for scanned PDFs using libraries like pytesseract or AWS Textract
 - **Multi-format Support**: Extend to support Word documents (.docx), plain text files, and web pages
 - **Better Text Extraction**: Implement more sophisticated text cleaning and sentence boundary detection
 
@@ -114,34 +112,22 @@ Based on the successful completion of the prototype, here are the key recommenda
 - **Confidence Scoring**: Add confidence scores to help users prioritize review of extracted obligations
 
 ### 3. **Improved Data Management**
-- **Database Integration**: Replace Excel-only output with database storage (SQLite for local, PostgreSQL for enterprise)
 - **Obligation Categorization**: Automatically categorize obligations by type (security, privacy, operational, etc.)
 - **Timeline Extraction**: Use NLP to extract due dates and compliance timelines from text
 - **Duplicate Detection**: Implement algorithms to identify and merge duplicate obligations across documents
 
 ### 4. **User Experience Enhancements**
-- **Web Interface**: Develop a Flask/FastAPI web application with drag-and-drop PDF upload
 - **Batch Processing**: Support processing multiple documents simultaneously
-- **Progress Tracking**: Add real-time progress indicators for long-running operations
-- **Interactive Review**: Allow users to approve/reject extracted obligations with feedback loops
-
-### 5. **Enterprise Features**
-- **User Authentication**: Implement role-based access control for multi-user environments
 - **Audit Trail**: Track all changes and reviews for compliance reporting
-- **Integration APIs**: Provide REST APIs for integration with existing compliance management systems
 - **Reporting Dashboard**: Create visual dashboards showing compliance status and trends
 
 ### 6. **Quality and Reliability**
 - **Error Handling**: Implement comprehensive error handling and recovery mechanisms
 - **Performance Optimization**: Add caching, parallel processing, and memory optimization
-- **Comprehensive Testing**: Expand test coverage to include integration tests and performance tests
-- **Documentation**: Create user guides, API documentation, and deployment instructions
+- **Comprehensive Testing**: Expand test coverage
 
 ### 7. **Deployment and Operations**
-- **Containerization**: Package the application using Docker for consistent deployment
-- **Cloud Deployment**: Support deployment to AWS, Azure, or GCP with auto-scaling
-- **Configuration Management**: Implement environment-based configuration management
-- **Monitoring and Logging**: Add application monitoring, logging, and alerting capabilities
+not required
 
 ### 8. **Compliance Framework Support**
 - **Framework Templates**: Pre-built templates for common frameworks (SOX, GDPR, HIPAA, ISO 27001)
