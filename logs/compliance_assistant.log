@@ -1,0 +1,167 @@
+2025-08-15 14:04:07 - compliance_assistant.cli - INFO - main:22 - Starting CLI application
+2025-08-15 14:04:07 - compliance_assistant.cli - INFO - main:70 - CLI arguments: pdf=data/documents/sample_IT_compliance_document.pdf, output=output, log_level=INFO
+2025-08-15 14:04:07 - compliance_assistant.main - INFO - __init__:23 - Initializing Compliance Assistant
+2025-08-15 14:04:07 - compliance_assistant.pdf_reader - INFO - __init__:19 - Initializing PDF reader
+2025-08-15 14:04:07 - compliance_assistant.obligation_finder - INFO - __init__:21 - Initializing obligation finder
+2025-08-15 14:04:07 - compliance_assistant.excel_exporter - INFO - __init__:20 - Initializing Excel exporter
+2025-08-15 14:04:07 - compliance_assistant.main - INFO - __init__:27 - Compliance Assistant initialization complete
+2025-08-15 14:04:07 - compliance_assistant.main - INFO - process_document:40 - Starting document processing: data/documents/sample_IT_compliance_document.pdf
+2025-08-15 14:04:07 - compliance_assistant.main - INFO - process_document:47 - Step 1: Starting PDF text extraction
+2025-08-15 14:04:07 - compliance_assistant.pdf_reader - INFO - process_pdf:104 - Starting complete PDF processing for: data/documents/sample_IT_compliance_document.pdf
+2025-08-15 14:04:07 - compliance_assistant.pdf_reader - INFO - extract_text_from_pdf:36 - Starting text extraction from PDF: data/documents/sample_IT_compliance_document.pdf
+2025-08-15 14:04:07 - compliance_assistant.pdf_reader - INFO - extract_text_from_pdf:52 - Successfully extracted 1791 characters from PDF
+2025-08-15 14:04:07 - compliance_assistant.pdf_reader - INFO - split_into_sentences:91 - Split text into 6 valid sentences
+2025-08-15 14:04:07 - compliance_assistant.pdf_reader - INFO - process_pdf:109 - PDF processing complete. Extracted 6 sentences
+2025-08-15 14:04:07 - compliance_assistant.main - INFO - process_document:50 - Step 1 complete: Extracted 6 sentences
+2025-08-15 14:04:07 - compliance_assistant.main - INFO - process_document:54 - Step 2: Starting obligation detection
+2025-08-15 14:04:07 - compliance_assistant.obligation_finder - INFO - process_sentences:133 - Starting complete obligation processing for 6 sentences
+2025-08-15 14:04:07 - compliance_assistant.obligation_finder - INFO - extract_obligations:56 - Starting obligation extraction from 6 sentences
+2025-08-15 14:04:07 - compliance_assistant.obligation_finder - INFO - extract_obligations:77 - Extracted 5 potential obligations
+2025-08-15 14:04:07 - compliance_assistant.obligation_finder - INFO - filter_obligations:92 - Starting filtering of 5 obligations
+2025-08-15 14:04:07 - compliance_assistant.obligation_finder - INFO - filter_obligations:120 - Filtering complete: 5 obligations kept, 0 filtered out
+2025-08-15 14:04:07 - compliance_assistant.obligation_finder - INFO - process_sentences:138 - Obligation processing complete: 5 final obligations
+2025-08-15 14:04:07 - compliance_assistant.main - INFO - process_document:57 - Step 2 complete: Found 5 obligations
+2025-08-15 14:04:07 - compliance_assistant.main - INFO - process_document:61 - Step 3: Starting Excel export
+2025-08-15 14:04:07 - compliance_assistant.excel_exporter - INFO - export_to_excel:103 - Starting Excel export to: output\sample_IT_compliance_document_obligations_20250815_140407.xlsx
+2025-08-15 14:04:07 - compliance_assistant.excel_exporter - INFO - create_obligation_dataframe:35 - Creating DataFrame for 5 obligations from sample_IT_compliance_document.pdf
+2025-08-15 14:04:07 - compliance_assistant.excel_exporter - INFO - create_obligation_dataframe:52 - DataFrame created with 5 rows and 7 columns
+2025-08-15 14:04:07 - compliance_assistant.excel_exporter - INFO - export_to_excel:122 - Successfully exported 5 obligations to Excel: output\sample_IT_compliance_document_obligations_20250815_140407.xlsx
+2025-08-15 14:04:07 - compliance_assistant.main - INFO - process_document:66 - Step 3 complete: Excel file created at output\sample_IT_compliance_document_obligations_20250815_140407.xlsx
+2025-08-15 14:04:07 - compliance_assistant.main - INFO - process_document:69 - Step 4: Generating summary report
+2025-08-15 14:04:07 - compliance_assistant.excel_exporter - INFO - create_summary_report:163 - Creating summary report for 5 obligations
+2025-08-15 14:04:07 - compliance_assistant.main - INFO - process_document:81 - Document processing completed successfully
+2025-08-15 14:04:07 - compliance_assistant.cli - INFO - main:93 - CLI application completed successfully
+2025-08-15 14:04:28 - compliance_assistant.pdf_reader - INFO - __init__:19 - Initializing PDF reader
+2025-08-15 14:04:28 - compliance_assistant.pdf_reader - INFO - split_into_sentences:91 - Split text into 3 valid sentences
+2025-08-15 14:04:28 - compliance_assistant.pdf_reader - INFO - __init__:19 - Initializing PDF reader
+2025-08-15 14:04:28 - compliance_assistant.pdf_reader - INFO - split_into_sentences:91 - Split text into 1 valid sentences
+2025-08-15 14:04:28 - compliance_assistant.obligation_finder - INFO - __init__:21 - Initializing obligation finder
+2025-08-15 14:04:28 - compliance_assistant.obligation_finder - INFO - __init__:21 - Initializing obligation finder
+2025-08-15 14:04:28 - compliance_assistant.obligation_finder - INFO - extract_obligations:56 - Starting obligation extraction from 4 sentences
+2025-08-15 14:04:28 - compliance_assistant.obligation_finder - INFO - extract_obligations:77 - Extracted 3 potential obligations
+2025-08-15 14:04:28 - compliance_assistant.obligation_finder - INFO - __init__:21 - Initializing obligation finder
+2025-08-15 14:04:28 - compliance_assistant.obligation_finder - INFO - filter_obligations:92 - Starting filtering of 3 obligations
+2025-08-15 14:04:28 - compliance_assistant.obligation_finder - INFO - filter_obligations:120 - Filtering complete: 1 obligations kept, 2 filtered out
+2025-08-15 14:04:28 - compliance_assistant.excel_exporter - INFO - __init__:20 - Initializing Excel exporter
+2025-08-15 14:04:28 - compliance_assistant.excel_exporter - INFO - create_obligation_dataframe:35 - Creating DataFrame for 2 obligations from test.pdf
+2025-08-15 14:04:28 - compliance_assistant.excel_exporter - INFO - create_obligation_dataframe:52 - DataFrame created with 2 rows and 7 columns
+2025-08-15 14:04:28 - compliance_assistant.excel_exporter - INFO - __init__:20 - Initializing Excel exporter
+2025-08-15 14:04:28 - compliance_assistant.excel_exporter - INFO - export_to_excel:103 - Starting Excel export to: C:\Users\ddobs\AppData\Local\Temp\tmpp7redz4i\test_output.xlsx
+2025-08-15 14:04:28 - compliance_assistant.excel_exporter - INFO - create_obligation_dataframe:35 - Creating DataFrame for 1 obligations from test.pdf
+2025-08-15 14:04:28 - compliance_assistant.excel_exporter - INFO - create_obligation_dataframe:52 - DataFrame created with 1 rows and 7 columns
+2025-08-15 14:04:28 - compliance_assistant.excel_exporter - INFO - export_to_excel:122 - Successfully exported 1 obligations to Excel: C:\Users\ddobs\AppData\Local\Temp\tmpp7redz4i\test_output.xlsx
+2025-08-15 14:04:28 - compliance_assistant.excel_exporter - INFO - __init__:20 - Initializing Excel exporter
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - __init__:23 - Initializing Compliance Assistant
+2025-08-15 14:04:28 - compliance_assistant.pdf_reader - INFO - __init__:19 - Initializing PDF reader
+2025-08-15 14:04:28 - compliance_assistant.obligation_finder - INFO - __init__:21 - Initializing obligation finder
+2025-08-15 14:04:28 - compliance_assistant.excel_exporter - INFO - __init__:20 - Initializing Excel exporter
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - __init__:27 - Compliance Assistant initialization complete
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - __init__:23 - Initializing Compliance Assistant
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - __init__:27 - Compliance Assistant initialization complete
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - process_document:40 - Starting document processing: test.pdf
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - process_document:47 - Step 1: Starting PDF text extraction
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - process_document:50 - Step 1 complete: Extracted 2 sentences
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - process_document:54 - Step 2: Starting obligation detection
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - process_document:57 - Step 2 complete: Found 1 obligations
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - process_document:61 - Step 3: Starting Excel export
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - process_document:66 - Step 3 complete: Excel file created at test_output.xlsx
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - process_document:69 - Step 4: Generating summary report
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - process_document:81 - Document processing completed successfully
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - __init__:23 - Initializing Compliance Assistant
+2025-08-15 14:04:28 - compliance_assistant.pdf_reader - INFO - __init__:19 - Initializing PDF reader
+2025-08-15 14:04:28 - compliance_assistant.obligation_finder - INFO - __init__:21 - Initializing obligation finder
+2025-08-15 14:04:28 - compliance_assistant.excel_exporter - INFO - __init__:20 - Initializing Excel exporter
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - __init__:27 - Compliance Assistant initialization complete
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - process_document:40 - Starting document processing: data/documents/sample_IT_compliance_document.pdf
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - process_document:47 - Step 1: Starting PDF text extraction
+2025-08-15 14:04:28 - compliance_assistant.pdf_reader - INFO - process_pdf:104 - Starting complete PDF processing for: data/documents/sample_IT_compliance_document.pdf
+2025-08-15 14:04:28 - compliance_assistant.pdf_reader - INFO - extract_text_from_pdf:36 - Starting text extraction from PDF: data/documents/sample_IT_compliance_document.pdf
+2025-08-15 14:04:28 - compliance_assistant.pdf_reader - INFO - extract_text_from_pdf:52 - Successfully extracted 1791 characters from PDF
+2025-08-15 14:04:28 - compliance_assistant.pdf_reader - INFO - split_into_sentences:91 - Split text into 6 valid sentences
+2025-08-15 14:04:28 - compliance_assistant.pdf_reader - INFO - process_pdf:109 - PDF processing complete. Extracted 6 sentences
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - process_document:50 - Step 1 complete: Extracted 6 sentences
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - process_document:54 - Step 2: Starting obligation detection
+2025-08-15 14:04:28 - compliance_assistant.obligation_finder - INFO - process_sentences:133 - Starting complete obligation processing for 6 sentences
+2025-08-15 14:04:28 - compliance_assistant.obligation_finder - INFO - extract_obligations:56 - Starting obligation extraction from 6 sentences
+2025-08-15 14:04:28 - compliance_assistant.obligation_finder - INFO - extract_obligations:77 - Extracted 5 potential obligations
+2025-08-15 14:04:28 - compliance_assistant.obligation_finder - INFO - filter_obligations:92 - Starting filtering of 5 obligations
+2025-08-15 14:04:28 - compliance_assistant.obligation_finder - INFO - filter_obligations:120 - Filtering complete: 5 obligations kept, 0 filtered out
+2025-08-15 14:04:28 - compliance_assistant.obligation_finder - INFO - process_sentences:138 - Obligation processing complete: 5 final obligations
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - process_document:57 - Step 2 complete: Found 5 obligations
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - process_document:61 - Step 3: Starting Excel export
+2025-08-15 14:04:28 - compliance_assistant.excel_exporter - INFO - export_to_excel:103 - Starting Excel export to: C:\Users\ddobs\AppData\Local\Temp\tmp6wato7lr\sample_IT_compliance_document_obligations_20250815_140428.xlsx
+2025-08-15 14:04:28 - compliance_assistant.excel_exporter - INFO - create_obligation_dataframe:35 - Creating DataFrame for 5 obligations from sample_IT_compliance_document.pdf
+2025-08-15 14:04:28 - compliance_assistant.excel_exporter - INFO - create_obligation_dataframe:52 - DataFrame created with 5 rows and 7 columns
+2025-08-15 14:04:28 - compliance_assistant.excel_exporter - INFO - export_to_excel:122 - Successfully exported 5 obligations to Excel: C:\Users\ddobs\AppData\Local\Temp\tmp6wato7lr\sample_IT_compliance_document_obligations_20250815_140428.xlsx
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - process_document:66 - Step 3 complete: Excel file created at C:\Users\ddobs\AppData\Local\Temp\tmp6wato7lr\sample_IT_compliance_document_obligations_20250815_140428.xlsx
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - process_document:69 - Step 4: Generating summary report
+2025-08-15 14:04:28 - compliance_assistant.excel_exporter - INFO - create_summary_report:163 - Creating summary report for 5 obligations
+2025-08-15 14:04:28 - compliance_assistant.main - INFO - process_document:81 - Document processing completed successfully
+2025-08-15 14:04:38 - compliance_assistant.cli - INFO - main:22 - Starting CLI application
+2025-08-15 14:04:38 - compliance_assistant.cli - INFO - main:70 - CLI arguments: pdf=data/documents/sample_IT_compliance_document.pdf, output=output, log_level=DEBUG
+2025-08-15 14:04:38 - compliance_assistant.main - INFO - __init__:23 - Initializing Compliance Assistant
+2025-08-15 14:04:38 - compliance_assistant.pdf_reader - INFO - __init__:19 - Initializing PDF reader
+2025-08-15 14:04:38 - compliance_assistant.obligation_finder - INFO - __init__:21 - Initializing obligation finder
+2025-08-15 14:04:38 - compliance_assistant.obligation_finder - DEBUG - __init__:22 - Using obligation keywords: ['must', 'shall', 'required', 'mandatory']
+2025-08-15 14:04:38 - compliance_assistant.excel_exporter - INFO - __init__:20 - Initializing Excel exporter
+2025-08-15 14:04:38 - compliance_assistant.main - INFO - __init__:27 - Compliance Assistant initialization complete
+2025-08-15 14:04:38 - compliance_assistant.main - INFO - process_document:40 - Starting document processing: data/documents/sample_IT_compliance_document.pdf
+2025-08-15 14:04:38 - compliance_assistant.main - INFO - process_document:47 - Step 1: Starting PDF text extraction
+2025-08-15 14:04:38 - compliance_assistant.pdf_reader - INFO - process_pdf:104 - Starting complete PDF processing for: data/documents/sample_IT_compliance_document.pdf
+2025-08-15 14:04:38 - compliance_assistant.pdf_reader - INFO - extract_text_from_pdf:36 - Starting text extraction from PDF: data/documents/sample_IT_compliance_document.pdf
+2025-08-15 14:04:38 - compliance_assistant.pdf_reader - DEBUG - extract_text_from_pdf:43 - PDF has 1 pages
+2025-08-15 14:04:38 - compliance_assistant.pdf_reader - DEBUG - extract_text_from_pdf:49 - Extracted 1792 characters from page 1
+2025-08-15 14:04:38 - compliance_assistant.pdf_reader - INFO - extract_text_from_pdf:52 - Successfully extracted 1791 characters from PDF
+2025-08-15 14:04:38 - compliance_assistant.pdf_reader - DEBUG - split_into_sentences:72 - Starting sentence splitting for text of length 1791
+2025-08-15 14:04:38 - compliance_assistant.pdf_reader - DEBUG - split_into_sentences:76 - Text cleaned, length: 1791
+2025-08-15 14:04:38 - compliance_assistant.pdf_reader - DEBUG - split_into_sentences:82 - Initial split produced 6 potential sentences
+2025-08-15 14:04:38 - compliance_assistant.pdf_reader - INFO - split_into_sentences:91 - Split text into 6 valid sentences
+2025-08-15 14:04:38 - compliance_assistant.pdf_reader - INFO - process_pdf:109 - PDF processing complete. Extracted 6 sentences
+2025-08-15 14:04:38 - compliance_assistant.main - INFO - process_document:50 - Step 1 complete: Extracted 6 sentences
+2025-08-15 14:04:38 - compliance_assistant.main - INFO - process_document:54 - Step 2: Starting obligation detection
+2025-08-15 14:04:38 - compliance_assistant.obligation_finder - INFO - process_sentences:133 - Starting complete obligation processing for 6 sentences
+2025-08-15 14:04:38 - compliance_assistant.obligation_finder - INFO - extract_obligations:56 - Starting obligation extraction from 6 sentences
+2025-08-15 14:04:38 - compliance_assistant.obligation_finder - DEBUG - contains_obligation_keyword:41 - Found keyword 'must' in sentence: Data Classification Policy 1.1 Company data is cla...
+2025-08-15 14:04:38 - compliance_assistant.obligation_finder - DEBUG - extract_obligations:75 - Found obligation 1: Data Classification Policy 1.1 Company data is cla...
+2025-08-15 14:04:38 - compliance_assistant.obligation_finder - DEBUG - contains_obligation_keyword:41 - Found keyword 'must' in sentence: LLM Usage Compliance 2.1 All Large Language Model ...
+2025-08-15 14:04:38 - compliance_assistant.obligation_finder - DEBUG - extract_obligations:75 - Found obligation 2: LLM Usage Compliance 2.1 All Large Language Model ...
+2025-08-15 14:04:38 - compliance_assistant.obligation_finder - DEBUG - contains_obligation_keyword:41 - Found keyword 'must' in sentence: AI Content Generation Policy 3.1 AI-generated cont...
+2025-08-15 14:04:38 - compliance_assistant.obligation_finder - DEBUG - extract_obligations:75 - Found obligation 3: AI Content Generation Policy 3.1 AI-generated cont...
+2025-08-15 14:04:38 - compliance_assistant.obligation_finder - DEBUG - contains_obligation_keyword:41 - Found keyword 'must' in sentence: Access Control Standards 4.1 User access is grante...
+2025-08-15 14:04:38 - compliance_assistant.obligation_finder - DEBUG - extract_obligations:75 - Found obligation 4: Access Control Standards 4.1 User access is grante...
+2025-08-15 14:04:38 - compliance_assistant.obligation_finder - DEBUG - contains_obligation_keyword:41 - Found keyword 'required' in sentence: Compliance Monitoring 5.1 Regular audits are condu...
+2025-08-15 14:04:38 - compliance_assistant.obligation_finder - DEBUG - extract_obligations:75 - Found obligation 5: Compliance Monitoring 5.1 Regular audits are condu...
+2025-08-15 14:04:38 - compliance_assistant.obligation_finder - INFO - extract_obligations:77 - Extracted 5 potential obligations
+2025-08-15 14:04:38 - compliance_assistant.obligation_finder - INFO - filter_obligations:92 - Starting filtering of 5 obligations
+2025-08-15 14:04:38 - compliance_assistant.obligation_finder - INFO - filter_obligations:120 - Filtering complete: 5 obligations kept, 0 filtered out
+2025-08-15 14:04:38 - compliance_assistant.obligation_finder - INFO - process_sentences:138 - Obligation processing complete: 5 final obligations
+2025-08-15 14:04:38 - compliance_assistant.main - INFO - process_document:57 - Step 2 complete: Found 5 obligations
+2025-08-15 14:04:38 - compliance_assistant.main - INFO - process_document:61 - Step 3: Starting Excel export
+2025-08-15 14:04:38 - compliance_assistant.excel_exporter - DEBUG - generate_output_filename:148 - Generated output filename: output\sample_IT_compliance_document_obligations_20250815_140438.xlsx
+2025-08-15 14:04:38 - compliance_assistant.excel_exporter - INFO - export_to_excel:103 - Starting Excel export to: output\sample_IT_compliance_document_obligations_20250815_140438.xlsx
+2025-08-15 14:04:38 - compliance_assistant.excel_exporter - INFO - create_obligation_dataframe:35 - Creating DataFrame for 5 obligations from sample_IT_compliance_document.pdf
+2025-08-15 14:04:38 - compliance_assistant.excel_exporter - DEBUG - create_obligation_dataframe:49 - Added obligation 1: Data Classification Policy 1.1 Company data is cla...
+2025-08-15 14:04:38 - compliance_assistant.excel_exporter - DEBUG - create_obligation_dataframe:49 - Added obligation 2: LLM Usage Compliance 2.1 All Large Language Model ...
+2025-08-15 14:04:38 - compliance_assistant.excel_exporter - DEBUG - create_obligation_dataframe:49 - Added obligation 3: AI Content Generation Policy 3.1 AI-generated cont...
+2025-08-15 14:04:38 - compliance_assistant.excel_exporter - DEBUG - create_obligation_dataframe:49 - Added obligation 4: Access Control Standards 4.1 User access is grante...
+2025-08-15 14:04:38 - compliance_assistant.excel_exporter - DEBUG - create_obligation_dataframe:49 - Added obligation 5: Compliance Monitoring 5.1 Regular audits are condu...
+2025-08-15 14:04:38 - compliance_assistant.excel_exporter - INFO - create_obligation_dataframe:52 - DataFrame created with 5 rows and 7 columns
+2025-08-15 14:04:38 - compliance_assistant.excel_exporter - DEBUG - export_to_excel:111 - Ensured output directory exists: output
+2025-08-15 14:04:39 - compliance_assistant.excel_exporter - DEBUG - format_excel_worksheet:63 - Starting Excel worksheet formatting
+2025-08-15 14:04:39 - compliance_assistant.excel_exporter - DEBUG - format_excel_worksheet:81 - Set column A width to 9
+2025-08-15 14:04:39 - compliance_assistant.excel_exporter - DEBUG - format_excel_worksheet:81 - Set column B width to 50
+2025-08-15 14:04:39 - compliance_assistant.excel_exporter - DEBUG - format_excel_worksheet:81 - Set column C width to 35
+2025-08-15 14:04:39 - compliance_assistant.excel_exporter - DEBUG - format_excel_worksheet:81 - Set column D width to 10
+2025-08-15 14:04:39 - compliance_assistant.excel_exporter - DEBUG - format_excel_worksheet:81 - Set column E width to 13
+2025-08-15 14:04:39 - compliance_assistant.excel_exporter - DEBUG - format_excel_worksheet:81 - Set column F width to 15
+2025-08-15 14:04:39 - compliance_assistant.excel_exporter - DEBUG - format_excel_worksheet:81 - Set column G width to 13
+2025-08-15 14:04:39 - compliance_assistant.excel_exporter - DEBUG - format_excel_worksheet:88 - Excel worksheet formatting completed
+2025-08-15 14:04:39 - compliance_assistant.excel_exporter - INFO - export_to_excel:122 - Successfully exported 5 obligations to Excel: output\sample_IT_compliance_document_obligations_20250815_140438.xlsx
+2025-08-15 14:04:39 - compliance_assistant.main - INFO - process_document:66 - Step 3 complete: Excel file created at output\sample_IT_compliance_document_obligations_20250815_140438.xlsx
+2025-08-15 14:04:39 - compliance_assistant.main - INFO - process_document:69 - Step 4: Generating summary report
+2025-08-15 14:04:39 - compliance_assistant.excel_exporter - INFO - create_summary_report:163 - Creating summary report for 5 obligations
+2025-08-15 14:04:39 - compliance_assistant.excel_exporter - DEBUG - create_summary_report:179 - Summary report created: {'total_obligations': 5, 'source_document': 'sample_IT_compliance_document.pdf', 'keyword_distribution': {'must': 4, 'required': 1}, 'extraction_timestamp': '2025-08-15T14:04:39.107042'}
+2025-08-15 14:04:39 - compliance_assistant.main - INFO - process_document:81 - Document processing completed successfully
+2025-08-15 14:04:39 - compliance_assistant.main - DEBUG - print_summary:100 - Printing summary report
+2025-08-15 14:04:39 - compliance_assistant.main - DEBUG - print_summary:137 - Summary report printed successfully
+2025-08-15 14:04:39 - compliance_assistant.cli - INFO - main:93 - CLI application completed successfully
