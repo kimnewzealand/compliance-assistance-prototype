@@ -44,7 +44,7 @@ Future state:
 User-triggered system (not real-time).
 The system should be able to handle up to 100 documents at a time.  
 - Security Requirements
-Any LLM models used in the solution must meet the companies's own security standards and policies.
+Any LLM models used in the solution must meet the company's own security standards and policies.
 - Cost Requirements
 The system should be cost-effective from token usage perspective.
 
