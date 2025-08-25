@@ -110,6 +110,7 @@ Based on the successful completion of the prototype, here are the key recommenda
 - **Context-Aware Detection**: Use NLP techniques to understand obligation context and severity levels
 - **Custom Keyword Sets**: Allow users to define custom obligation keywords for different compliance frameworks
 - **Confidence Scoring**: Add confidence scores to help users prioritize review of extracted obligations
+- **RAG workflow**: Implement a RAG workflow to improve accuracy of obligation detection and retrieval
 
 ### 3. **Improved Data Management**
 - **Obligation Categorization**: Automatically categorize obligations by type (security, privacy, operational, etc.)
@@ -118,8 +119,8 @@ Based on the successful completion of the prototype, here are the key recommenda
 
 ### 4. **User Experience Enhancements**
 - **Batch Processing**: Support processing multiple documents simultaneously
-- **Audit Trail**: Track all changes and reviews for compliance reporting
 - **Reporting Dashboard**: Create visual dashboards showing compliance status and trends
+- **Compliance Reporting**: Generate compliance reports in human readable formats
 
 ### 6. **Quality and Reliability**
 - **Error Handling**: Implement comprehensive error handling and recovery mechanisms
@@ -127,10 +128,23 @@ Based on the successful completion of the prototype, here are the key recommenda
 - **Comprehensive Testing**: Expand test coverage
 
 ### 7. **Deployment and Operations**
-not required
+not required at this stage
 
 ### 8. **Compliance Framework Support**
-- **Framework Templates**: Pre-built templates for common frameworks (SOX, GDPR, HIPAA, ISO 27001)
+- **Cross-Reference Mapping**: Map obligations to specific regulatory requirements and perform gap analysis
 - **Regulatory Updates**: Mechanism to update obligation patterns when regulations change
-- **Cross-Reference Mapping**: Map obligations to specific regulatory requirements
-- **Compliance Reporting**: Generate compliance reports in standard formats
+
+### 9. **Auditable Chain of Thought**
+- **Decision Trail Logging**: Maintain detailed exported logs of all AI step by step based decisioning process
+- **Confidence Analysis**: Statistical confidence in each decision
+- **Exception Report**: Edge cases and low-confidence decisions
+- **Explainability**: Provide reasoning explanations for AI-based decisions
+- **Version Control and Change logging**: Implement version control for all AI models and configurations
+- **Bias Detection**: Implement bias detection and mitigation mechanisms
+
+### 10. **Evaluation**
+- Predefined test cases covering various obligation scenarios
+- Accuracy metrics measurement - Precision, recall, F1-score calculation
+- Core functionality validation for all components
+- Performance benchmarking and time tracking
+- Metrics storage in JSON format
